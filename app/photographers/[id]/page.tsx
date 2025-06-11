@@ -1,10 +1,13 @@
 import PhotographerProfile from "@/component/PhotographerProfile";
 
-export default function ProfilePage({
-  params,
-}: {
-  params: { id: string };
-}) {
+interface PageProps {
+  params: {
+    id: string;
+  };
+}
+
+export default function ProfilePage({ params }: PageProps) {
   return <PhotographerProfile id={params.id} />;
 }
+
 
